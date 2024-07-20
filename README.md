@@ -21,7 +21,7 @@ Select any distribution from Docker Hub.
 After pulling it, export the tarball to the host machine.
 
 To export it, run the following command: 
-* docker export <container_id_or_name> -o <path>. 
+* docker export <container_id_or_name> -o host_path 
 
 For example:
 
