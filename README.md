@@ -1,7 +1,11 @@
 # ExtraWSL
 
 ##
-Useful tools & Custom image installer (you can almost install any linx)
+Useful tools & Custom image installer (you can almost install any linux distro)
+
+
+
+<b>Amazon Linux 2023 on WSL2<b/>
 ![image](https://github.com/user-attachments/assets/980bcb0f-aab3-4197-8a30-552759d4de76)
 
 
