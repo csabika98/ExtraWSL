@@ -10,6 +10,43 @@ Useful tools & Custom image installer (you can almost install any linux distro)
 
 
 
+## Example 1 -> export Docker container's rootfs then import to WSL
+
+You can easily obtain the root filesystem (rootfs) of any distribution using docker container.
+
+Example:
+
+Select any distribution from Docker Hub.
+
+After pulling it, export the tarball to the host machine.
+
+To export it, run the following command: 
+* docker export <container_id_or_name> -o <path>. 
+
+For example:
+
+* docker export ea153aa76c2867a8b7f959f92b4d68238ae6ece3f38178a2bc304dcc90ee2035 -o rootfs.tar
+
+
+![image](https://github.com/user-attachments/assets/c18dedf8-22fa-49c4-a440-2b387fe6bc6e)
+
+If you haven't already cloned this repository, do so now:
+<br>
+* git clone https://github.com/csabika98/ExtraWSL  
+To import and register the Docker container, follow these steps:
+
+![image](https://github.com/user-attachments/assets/7f82d1f6-268f-4762-bfef-6fd3df968165)
+
+Navigate to the "Release" directory, then run WslInstall.exe with the following syntax:
+<br>
+* syntax: .exe <distro_name> <rootfs_path> 
+
+You are almost done! To verify, run wsl -l. You should see your new distribution listed.
+![image](https://github.com/user-attachments/assets/5239293d-09cd-4c79-9749-2a9274f2941d)
+
+To run the new distro, type the following:
+* wsl -d <distro_name_you_added_> and voilá. Enjoy
+
 ## Overview
 WSLExtra is a suite of utilities designed to simplify the management and interaction with Windows Subsystem for Linux (WSL) distributions. 
 
