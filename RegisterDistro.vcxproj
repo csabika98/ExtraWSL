@@ -1,0 +1,86 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup Label="ProjectConfigurations">
+      <ProjectConfiguration Include="Debug|x64">
+        <Configuration>Debug</Configuration>
+        <Platform>x64</Platform>
+      </ProjectConfiguration>
+      <ProjectConfiguration Include="Release|x64">
+        <Configuration>Release</Configuration>
+        <Platform>x64</Platform>
+      </ProjectConfiguration>
+    </ItemGroup>
+    <PropertyGroup Label="Globals">
+     
+      <Keyword>RegisterDistro</Keyword>
+      <RootNamespace>Project</RootNamespace>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+      <ConfigurationType>Application</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <PlatformToolset>v143</PlatformToolset>
+      
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+      <ConfigurationType>Application</ConfigurationType>
+      <UseDebugLibraries>false</UseDebugLibraries>
+      <PlatformToolset>v143</PlatformToolset>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+    <ImportGroup Label="ExtensionSettings">
+    </ImportGroup>
+    <ImportGroup Label="Shared">
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Configuration)\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Configuration)\</OutDir>
+    </PropertyGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      <ClCompile>
+        <WarningLevel>Level4</WarningLevel>
+        <Optimization>Disabled</Optimization>
+        <PreprocessorDefinitions>DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      </ClCompile>
+      <Link>
+        <SubSystem>Console</SubSystem>
+        <GenerateDebugInformation>true</GenerateDebugInformation>
+        <AdditionalDependencies>shell32.lib;ole32.lib;wslapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+        <AdditionalLibraryDirectories>$(SolutionDir)lib;$(SolutionDir)\lib</AdditionalLibraryDirectories>
+      </Link>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      <ClCompile>
+        <WarningLevel>Level4</WarningLevel>
+        <Optimization>MaxSpeed</Optimization>
+        <FunctionLevelLinking>true</FunctionLevelLinking>
+        <IntrinsicFunctions>true</IntrinsicFunctions>
+        <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      </ClCompile>
+      <Link>
+        <SubSystem>Console</SubSystem>
+        <GenerateDebugInformation>false</GenerateDebugInformation>
+        <EnableCOMDATFolding>true</EnableCOMDATFolding>
+        <OptimizeReferences>true</OptimizeReferences>
+        <AdditionalDependencies>shell32.lib;ole32.lib;wslapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+        <AdditionalLibraryDirectories>$(SolutionDir)lib;$(SolutionDir)\lib</AdditionalLibraryDirectories>
+      </Link>
+    </ItemDefinitionGroup>
+    <ItemGroup>
+      <ClCompile Include="RegisterDistro.c" />
+       <!-- Add other files here -->
+    </ItemGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+    <ImportGroup Label="ExtensionTargets">
+    </ImportGroup>
+  </Project>
+  
