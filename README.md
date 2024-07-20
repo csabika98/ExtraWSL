@@ -26,6 +26,9 @@ Useful tools & Custom image installer (you can almost install any linux distro)
 <b>Amazon Linux 2023 on WSL2<b/>
 ![image](https://github.com/user-attachments/assets/980bcb0f-aab3-4197-8a30-552759d4de76)
 
+<b> Raspbian / raspberry-pi-OS on ARMV7 </b>
+![image](https://github.com/user-attachments/assets/6f48aa15-8fb3-4d0d-ad1c-7e729fb692eb)
+
 
 
 ## Example 1 -> export Docker container's rootfs then import to WSL
@@ -72,6 +75,16 @@ You should see your new distribution listed.
 
 To run the new distro, type the following:
 * `wsl -d <distro_name_you_added_>` and voilá. Enjoy
+
+* If you did it correctly, you are in, you can check:
+* OS-release
+* NEOFETCH
+  
+![image](https://github.com/user-attachments/assets/b015243c-3253-4480-b753-ed7a6479eb48)
+
+![image](https://github.com/user-attachments/assets/c6edc2da-95b6-4c48-845a-968fd5dbd1f4)
+
+
 
 ## Overview
 WSLExtra is a suite of utilities designed to simplify the management and interaction with Windows Subsystem for Linux (WSL) distributions. 
