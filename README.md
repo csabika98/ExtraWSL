@@ -1,7 +1,7 @@
 # Table of Contents
 
 1. [Introduction](#introduction)
-2. [Example 1 -> Export Docker Container's Rootfs and Import to WSL](#example-1--export-docker-containers-rootfs-and-import-to-wsl)
+2. [Example 1 -> Export Docker Container's Rootfs and Import to WSL](example-1---export-docker-containers-rootfs-then-import-to-wsl)
 3. [Overview](#overview)
 4. [Components](#components)
    - [WslInstall](#wslinstall)
