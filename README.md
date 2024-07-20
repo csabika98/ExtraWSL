@@ -78,6 +78,9 @@ WSLExtra is a suite of utilities designed to simplify the management and interac
 
 This collection of tools enables users to configure, retrieve information, register, and unregister WSL distributions, as well as install new GNU/Linux distributions.
 
+
+
+
 ## Components
 
 # 1. WslInstall
@@ -104,6 +107,14 @@ This command installs the Ubuntu distribution from `ubuntu.tar.gz`. After instal
 You should see a root filesystem folder in the directory where you installed the distribution.
 
 
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 # 2. ConfigDistro
 **Description:**  
 Configures a WSL distribution by setting the default user ID and distribution flags.
@@ -119,6 +130,14 @@ Configures a WSL distribution by setting the default user ID and distribution fl
 `ConfigDistro.exe Ubuntu 1000 WSL_DISTRIBUTION_FLAGS_DEFAULT`
 
 This command configures the Ubuntu distribution with a default user ID of 1000 and the default distribution flags.
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # 3. GetDistroConfig
 **Description:**  
@@ -141,6 +160,13 @@ Default Environment Variables Array: HOSTTYPE=x86_64
 Default Environment Variables Count: 4
 
 
+<br>
+<br>
+<br>
+<br>
+
+
+
 # 4. IsDistroRegistered
 **Description:**  
 Checks if a WSL distribution is registered and available for use.
@@ -149,6 +175,13 @@ Checks if a WSL distribution is registered and available for use.
 `IsDistroRegistered.exe <distro_name>`
 
 - **distro_name:** The name of the WSL distribution.
+
+
+<br>
+<br>
+<br>
+<br>
+
 
 # 5. LaunchDistro
 **Description:**  
@@ -159,6 +192,13 @@ Launches the specified Linux distribution.
 
 - **distro_name:** The name of the WSL distribution.
 
+<br>
+<br>
+<br>
+<br>
+
+
+
 # 6. LaunchIntDistro
 **Description:**  
 Launches an internal Linux distribution, typically used for testing or specific scenarios.
@@ -167,6 +207,12 @@ Launches an internal Linux distribution, typically used for testing or specific 
 `LaunchIntDistro.exe <distro_name>`
 
 - **distro_name:** The name of the WSL distribution.
+
+<br>
+<br>
+<br>
+<br>
+
 
 # 7. RegisterDistro
 **Description:**  
@@ -177,6 +223,11 @@ Registers a new WSL distribution.
 
 - **distro_name:** The name of the WSL distribution to register.
 
+<br>
+<br>
+<br>
+<br>
+
 # 8. UnregisterDistro
 **Description:**  
 Unregisters an existing WSL distribution.
@@ -185,7 +236,10 @@ Unregisters an existing WSL distribution.
 `UnregisterDistro.exe <distro_name>`
 
 - **distro_name:** The name of the WSL distribution to unregister.
-
+<br>
+<br>
+<br>
+<br>
 
 # Structure
 
