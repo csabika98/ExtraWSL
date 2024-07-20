@@ -1,7 +1,6 @@
 # ExtraWSL
 
 ##
-Project already compiled, "Release" folder has all .exe file that you need!
 
 
 ## Overview
