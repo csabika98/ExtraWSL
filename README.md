@@ -21,7 +21,8 @@
 ##
 Useful tools & Custom image installer (you can almost install any linux distro)
 
-
+<b>Azure Linux 3.0 - prew </b>
+![image](https://github.com/user-attachments/assets/47c39759-b841-4008-87a0-02693a84276b)
 
 <b>Amazon Linux 2023 on WSL2<b/>
 ![image](https://github.com/user-attachments/assets/980bcb0f-aab3-4197-8a30-552759d4de76)
